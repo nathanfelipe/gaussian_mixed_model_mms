@@ -5,14 +5,19 @@
 
 ## Project Structure 
 
-gus_first_project/
+gaussian_mixed_model_mms/
+
 ├── data/
+
 │ ├── processed/
 │ └── raw/
+
 ├── models/
 │ └── gmm_v1.py
+
 ├── scripts/
 │ └── feature_engineering.py
+
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
