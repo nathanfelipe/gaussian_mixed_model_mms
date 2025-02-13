@@ -9,17 +9,27 @@ gaussian_mixed_model_mms/
 
 ├── data/
 
-│ ├── processed/
+    │ ├── processed/
 
-│ └── raw/
+    │ └── raw/
 
 ├── models/
 
-│ └── gmm_v1.py
+    │ └── gmm_v1.py
 
 ├── scripts/
 
-│ └── feature_engineering.py
+    │ └── feature_engineering.py
+
+    │ └── read_cdf.py
+
+├── visualizations/
+
+    │ └── vis_v1.py
+
+    │ └── vis_v2.py
+
+    │ └── vis_v3.py
 
 ├── requirements.txt
 
