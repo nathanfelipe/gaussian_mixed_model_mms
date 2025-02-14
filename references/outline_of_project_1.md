@@ -65,12 +65,12 @@ The solar wind is not uniform; its speed, density, and composition vary over tim
    2. Slow Solar Wind (~300–400 km/s) is associated with streamer belt regions where plasma is more confined and escapes intermittently.
 
 2.	Coronal Mass Ejections (CMEs):
-   1.	CMEs are violent eruptions of magnetized plasma from the Sun’s corona.
-   2.	They can significantly increase the solar wind’s density and speed, triggering geomagnetic storms when they interact with Earth’s magnetosphere.
+   1. CMEs are violent eruptions of magnetized plasma from the Sun’s corona.
+   2. They can significantly increase the solar wind’s density and speed, triggering geomagnetic storms when they interact with Earth’s magnetosphere.
 
 3.	Interplanetary Shocks and Turbulence:
-   1.	Interactions between fast and slow solar wind streams create corotating interaction regions (CIRs), which can develop into shock waves.
-   2.	Turbulence in the solar wind plays a key role in energy dissipation and particle acceleration.s.
+   1. Interactions between fast and slow solar wind streams create corotating interaction regions (CIRs), which can develop into shock waves.
+   2. Turbulence in the solar wind plays a key role in energy dissipation and particle acceleration.s.
 
 #### Relevance to MMS Machine Learning:
 The solar wind’s variability and interaction with Earth’s magnetosphere create diverse plasma environments that must be classified and analyzed systematically. The Magnetospheric Multiscale (MMS) mission observes solar wind-driven magnetospheric processes, including magnetic reconnection and turbulence, which play a role in energy transfer. By using machine learning methods, such as Gaussian Mixture Models (GMM), we can classify different solar wind conditions and their impact on the magnetosphere, leading to improved understanding of space weather phenomena.
