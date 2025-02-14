@@ -10,24 +10,34 @@ Plasma behavior is governed by several fundamental parameters that characterize 
 
 ###	Debye Length:
 The Debye length is the characteristic scale over which electric fields are shielded in a plasma due to the collective response of free electrons. In a plasma, charged particles naturally rearrange to neutralize any local charge imbalances, preventing large-scale electrostatic fields from developing. This shielding effect ensures that plasmas behave as quasi-neutral media over large distances. The Debye length is given by:
-	    λD = √(ε0 * k_B * T / n_e * e^2)
+
+	    $$ \lambda_D = \sqrt{\epsilon_0 * k_B * T / n_e * e^2} $$
+
 where  T_e  is the electron temperature,  n_e  is the electron density,  k_B  is Boltzmann’s constant,  e  is the elementary charge, and  \epsilon_0  is the permittivity of free space. In the solar wind, the Debye length is typically a few meters, setting the smallest scale at which electrostatic interactions occur.
 
 ### Plasma Frequency (ω_p): 
 The plasma frequency describes the natural oscillation of electrons in response to small perturbations. If a group of electrons is displaced from equilibrium, the restoring force due to Coulomb attraction causes them to oscillate collectively. The plasma frequency is defined as:
-	    ω_p = √(n_e * e^2 / ε0 * m_e)
+
+	    $$ \omega_p = \sqrt{n_e * e^2 / \epsilon_0 * m_e} $$
+
 where  m_e  is the electron mass. This frequency determines how quickly a plasma can respond to changes in charge distributions and is fundamental to wave propagation in plasma. In the solar wind, the electron plasma frequency is on the order of tens of kHz.
 
 ### Gyrofrequency (Ω_c) and Larmor Radius (r_L): 
 When charged particles move in a magnetic field, they undergo gyration (cyclotron motion) due to the Lorentz force. The gyrofrequency (or cyclotron frequency) is the angular frequency of this motion:
-	    Ω_c = e * B / m_e
+
+	    $$ \Omega_c = e * B / m_e $$
+
 where  q  is the particle charge,  B  is the magnetic field strength, and  m  is the particle mass. The Larmor radius (or gyroradius) is the radius of the circular motion:
-	    r_L = v_perp / Ω_c
+
+	    $$ r_L = v_\perp / \Omega_c $$
+
 where  v_\perp  is the velocity perpendicular to the magnetic field. These parameters determine how tightly particles spiral around magnetic field lines and play a crucial role in plasma confinement, transport, and wave interactions.
 
 ### Plasma Beta (β): 
 The plasma beta parameter is the ratio of thermal pressure to magnetic pressure, which defines the dominance of kinetic versus magnetic effects:
-	    β = (n * k_B * T) / (B^2 / 2 * μ0)
+
+	    $$ \beta = (n * k_B * T) / (B^2 / 2 * \mu_0) $$
+        
 where  n  is the particle density,  T  is the plasma temperature,  B  is the magnetic field strength, and  \mu_0  is the permeability of free space. A low-beta plasma (β ≪ 1) is magnetically dominated, while a high-beta plasma (β ≫ 1) is kinetically dominated. Different regions of Earth’s magnetosphere exhibit varying plasma beta values, influencing reconnection and turbulence dynamics.
 
 ### Collisional vs. Collisionless Plasmas: 
@@ -132,16 +142,16 @@ However, plasma turbulence differs from traditional hydrodynamic turbulence due 
 #### Multi-scale nature: energy cascades from large to small scales.
 
 The energy cascade in plasma turbulence describes how energy injected at large scales (e.g., due to solar wind fluctuations or reconnection) is transferred to progressively smaller scales. This transfer follows a characteristic power-law spectrum, similar to hydrodynamic turbulence, but with key differences at kinetic scales:
-1.	MHD Scale (Large-Scale Turbulence):
-   1.	At scales larger than the ion inertial length (d_i), turbulence follows an MHD-like behavior.
-   2.	The Kolmogorov spectrum (similar to classical fluid turbulence) applies, with energy cascading as  P(k) \sim k^{-5/3} , where  k  is the wavenumber.
-2.	Ion and Electron Kinetic Scales (Small-Scale Turbulence):
-   1.	As energy reaches the ion scales (where ion cyclotron motion becomes important), MHD descriptions break down, and turbulence transitions to a kinetic regime.
-   2.	At these scales, energy dissipation occurs through wave-particle interactions, Landau damping, and reconnection-driven turbulence.
-   3.	A steeper spectral slope ( P(k) \sim k^{-7/3}  or more) is often observed.
+1. MHD Scale (Large-Scale Turbulence):
+   1. At scales larger than the ion inertial length (d_i), turbulence follows an MHD-like behavior.
+   2. The Kolmogorov spectrum (similar to classical fluid turbulence) applies, with energy cascading as  P(k) \sim k^{-5/3} , where  k  is the wavenumber.
+2. Ion and Electron Kinetic Scales (Small-Scale Turbulence):
+   1. As energy reaches the ion scales (where ion cyclotron motion becomes important), MHD descriptions break down, and turbulence transitions to a kinetic regime.
+   2. At these scales, energy dissipation occurs through wave-particle interactions, Landau damping, and reconnection-driven turbulence.
+   3. A steeper spectral slope ( P(k) \sim k^{-7/3}  or more) is often observed.
 3.	Energy Dissipation and Heating:
-   1.	Unlike hydrodynamic turbulence, where energy is dissipated via molecular viscosity, in plasmas, energy is dissipated through wave damping, reconnection, and stochastic heating mechanisms.
-   2.	This turbulent heating is crucial for explaining why the solar wind remains hot even as it expands away from the Sun.
+   1. Unlike hydrodynamic turbulence, where energy is dissipated via molecular viscosity, in plasmas, energy is dissipated through wave damping, reconnection, and stochastic heating mechanisms.
+   2. This turbulent heating is crucial for explaining why the solar wind remains hot even as it expands away from the Sun.
 
 #### Relevance to MMS Machine Learning:
 The MMS mission provides high-resolution measurements of turbulent fluctuations in magnetic fields, electric fields, and particle distributions, allowing researchers to investigate how turbulence drives particle heating, energy dissipation, and plasma transport. However, due to the complexity of turbulent data, identifying turbulent regions and characterizing their spectral properties requires advanced statistical and machine learning approaches. By using Gaussian Mixture Models (GMM) and clustering techniques, we can classify turbulent vs. non-turbulent plasma regions and extract key turbulence features, leading to a better understanding of energy dissipation in space plasmas.
@@ -151,15 +161,15 @@ The study of turbulence often involves analyzing how energy is distributed acros
 
 #### Kolmogorov scaling (~k^(-5/3) in MHD turbulence).
 In the magnetohydrodynamic (MHD) regime, which governs large-scale plasma dynamics where the ion and electron motion remain well coupled, the turbulence follows a power-law energy spectrum similar to Kolmogorov’s theory of hydrodynamic turbulence.
-1.	Kolmogorov’s theory predicts that in a fully developed turbulent cascade, energy is injected at large scales, cascades through intermediate scales, and is dissipated at smaller scales.
-2.	The power spectral density of turbulent fluctuations follows a characteristic scaling:
+1. Kolmogorov’s theory predicts that in a fully developed turbulent cascade, energy is injected at large scales, cascades through intermediate scales, and is dissipated at smaller scales.
+2. The power spectral density of turbulent fluctuations follows a characteristic scaling:
 
-     P(k) \sim k^{-5/3}
+     $$ P(k) \sim k^{-5/3} $$
 
 where:
-   1.	 P(k)  represents the power spectral density,
-   2.	 k  is the wavenumber (inverse of spatial scale),
-   3.	 The  -5/3  exponent describes the inertial range, where energy is transferred without dissipation.
+   1. P(k)  represents the power spectral density,
+   2. k  is the wavenumber (inverse of spatial scale),
+   3. The  -5/3  exponent describes the inertial range, where energy is transferred without dissipation.
 
 In space plasmas, such as the solar wind and magnetosheath, this MHD turbulence scaling is often observed at scales larger than the ion inertial length ( d_i ) or the ion gyroradius ( r_L ).
 
@@ -167,14 +177,14 @@ In space plasmas, such as the solar wind and magnetosheath, this MHD turbulence 
 #### Transition to kinetic scales (breaks in power spectrum).
 
 At smaller scales, approaching the ion kinetic scales, the MHD approximation breaks down, and the turbulence transitions to a kinetic regime. This transition is marked by spectral steepening, meaning that the power spectrum slope becomes steeper than  k^{-5/3} . The key spectral features at different kinetic scales include:
-1.	Ion Break (At the Ion Inertial Length  d_i  or Larmor Radius  r_L )
-   1.	As the cascade reaches ion scales, energy transfer slows down, leading to a spectral break.
-   2.	The power-law index steepens to a range of  k^{-7/3}  to  k^{-8/3} .
-   3.	Ion kinetic effects such as ion cyclotron damping, kinetic Alfvén waves, and Landau damping become dominant.
-2.	Electron Scale Cascade (At Electron Inertial Length  d_e )
-   1.	At even smaller scales, below the electron inertial length ( d_e ), another break in the spectrum occurs.
-   2.	The spectrum often steepens further, sometimes following a  k^{-3}  or even an exponential decay.
-   3.	This range is associated with electron heating and dissipation via processes such as stochastic heating, wave-particle interactions, and reconnection-driven dissipation.
+1. Ion Break (At the Ion Inertial Length  d_i  or Larmor Radius  r_L )
+   1. As the cascade reaches ion scales, energy transfer slows down, leading to a spectral break.
+   2. The power-law index steepens to a range of  k^{-7/3}  to  k^{-8/3} .
+   3. Ion kinetic effects such as ion cyclotron damping, kinetic Alfvén waves, and Landau damping become dominant.
+2. Electron Scale Cascade (At Electron Inertial Length  d_e )
+   1. At even smaller scales, below the electron inertial length ( d_e ), another break in the spectrum occurs.
+   2. The spectrum often steepens further, sometimes following a  k^{-3}  or even an exponential decay.
+   3. This range is associated with electron heating and dissipation via processes such as stochastic heating, wave-particle interactions, and reconnection-driven dissipation.
 
 #### Relevance to MMS Machine Learning:
 The Magnetospheric Multiscale (MMS) mission provides high-resolution observations of turbulent fluctuations in electric fields, magnetic fields, and particle distributions, allowing researchers to identify breaks in the power spectrum and determine where energy is dissipated. The challenge lies in automatically detecting and categorizing different turbulence regimes in vast datasets.
@@ -187,31 +197,33 @@ Plasma turbulence is not just a mechanism for redistributing energy across scale
 #### Stochastic acceleration of particles.
 
 In turbulent plasmas, charged particles undergo random, diffusive motion due to fluctuating electromagnetic fields, leading to stochastic acceleration. This process allows particles to gain energy over time without requiring direct collisional interactions. The main stochastic heating mechanisms include:
-1.	Turbulent Electric Fields
-   1.	Plasma turbulence generates fluctuating electric fields at multiple scales.
-   2.	As particles interact with these fields, they experience random accelerations, leading to energy gain.
-   3.	In the magnetosheath and plasma sheet, where turbulence is strong, this mechanism is particularly efficient at heating ions.
-2.	Wave-Particle Interactions
-   1.	Plasma turbulence excites low-frequency Alfvén waves, kinetic Alfvén waves (KAWs), and whistler waves.
-   2.	These waves resonate with ions and electrons, transferring energy to them.
-   3.	Landau damping and cyclotron resonance allow particles to absorb energy from these waves, increasing their temperature.
-3.	Reconnection-Driven Turbulence
-   1.	In regions like the magnetopause and magnetotail, turbulence enhances magnetic reconnection, which in turn injects energy into plasma particles.
-   2.	Small-scale reconnection events create islands of hot plasma, where stochastic interactions further accelerate particles.
+1. Turbulent Electric Fields
+   1. Plasma turbulence generates fluctuating electric fields at multiple scales.
+   2. As particles interact with these fields, they experience random accelerations, leading to energy gain.
+   3. In the magnetosheath and plasma sheet, where turbulence is strong, this mechanism is particularly efficient at heating ions.
+2. Wave-Particle Interactions
+   1. Plasma turbulence excites low-frequency Alfvén waves, kinetic Alfvén waves (KAWs), and whistler waves.
+   2. These waves resonate with ions and electrons, transferring energy to them.
+   3. Landau damping and cyclotron resonance allow particles to absorb energy from these waves, increasing their temperature.
+3. Reconnection-Driven Turbulence
+   1. In regions like the magnetopause and magnetotail, turbulence enhances magnetic reconnection, which in turn injects energy into plasma particles.
+   2. Small-scale reconnection events create islands of hot plasma, where stochastic interactions further accelerate particles.
 
 #### Implications for magnetospheric dynamics.
 
 The turbulent heating of ions and electrons has profound effects on the overall dynamics of Earth’s magnetosphere:
-1.	Increased Plasma Pressure
-   1.	When turbulence heats plasma, the plasma beta increases:
+1. Increased Plasma Pressure
+   1. When turbulence heats plasma, the plasma beta increases:
+
         $$ \beta = P_{\text{thermal}} / P_{\text{magnetic}} $$
-   2.	This affects stability, reconnection rates, and transport processes in the magnetosphere.
-2.	Regulation of Magnetopause and Magnetotail Dynamics
-   1.	Enhanced plasma pressure in the magnetopause can influence the dayside reconnection rate, altering the amount of solar wind plasma entering the magnetosphere.
-   2.	In the magnetotail, turbulent heating plays a role in substorm onset, controlling how energy is stored and released.
-3.	Solar Wind-Magnetosphere Coupling
-   1.	The solar wind continuously injects energy into the system through turbulence.
-   2.	Understanding how turbulence transports and dissipates energy helps in predicting space weather events such as geomagnetic storms and auroral activity.
+    
+   2. This affects stability, reconnection rates, and transport processes in the magnetosphere.
+2. Regulation of Magnetopause and Magnetotail Dynamics
+   1. Enhanced plasma pressure in the magnetopause can influence the dayside reconnection rate, altering the amount of solar wind plasma entering the magnetosphere.
+   2. In the magnetotail, turbulent heating plays a role in substorm onset, controlling how energy is stored and released.
+3. Solar Wind-Magnetosphere Coupling
+   1. The solar wind continuously injects energy into the system through turbulence.
+   2. Understanding how turbulence transports and dissipates energy helps in predicting space weather events such as geomagnetic storms and auroral activity.
 
 These processes result in non-Maxwellian velocity distributions, meaning that plasma does not follow a simple thermal distribution but instead develops high-energy tails, often observed in MMS data.
 
@@ -224,16 +236,16 @@ MMS provides high-resolution measurements of turbulent fluctuations, wave spectr
 Plasma turbulence plays a crucial role in shaping particle distributions, energy dissipation, and transport processes in space plasmas. However, this turbulence introduces significant complexity into the data collected by spacecraft missions such as MMS. Plasma regions that were once thought to be well-defined and distinct are now understood to be highly dynamic, overlapping, and exhibiting continuous transitions between different states. This presents a major challenge for traditional classification methods, which often rely on fixed thresholds or predefined boundaries to separate plasma regions.
 
 ### Why Traditional Statistical Methods Struggle
-1.	High Variability & Overlapping Regions: Plasma properties (such as density, temperature, and magnetic field strength) fluctuate due to turbulence, making it difficult to establish clear-cut boundaries between regions like the magnetosheath, magnetopause, and plasma sheet.
-2.	Nonlinear and Multi-Scale Effects: Turbulence causes complex multi-scale interactions, meaning that simple linear classifiers or threshold-based methods fail to capture the full range of plasma behavior.
-3.	Non-Gaussian Distributions: Particle velocity distributions in turbulent plasmas often deviate from Maxwellian distributions, forming high-energy tails or multi-modal structures, which standard statistical approaches cannot adequately model.
+1. High Variability & Overlapping Regions: Plasma properties (such as density, temperature, and magnetic field strength) fluctuate due to turbulence, making it difficult to establish clear-cut boundaries between regions like the magnetosheath, magnetopause, and plasma sheet.
+2. Nonlinear and Multi-Scale Effects: Turbulence causes complex multi-scale interactions, meaning that simple linear classifiers or threshold-based methods fail to capture the full range of plasma behavior.
+3. Non-Gaussian Distributions: Particle velocity distributions in turbulent plasmas often deviate from Maxwellian distributions, forming high-energy tails or multi-modal structures, which standard statistical approaches cannot adequately model.
 
 ### The Need for Machine Learning
 
 To overcome these challenges, unsupervised machine learning techniques, such as Gaussian Mixture Models (GMMs), provide a more flexible and data-driven approach to plasma classification. GMM clustering allows for:
-1.	Soft Classification: Instead of assigning each data point to a single region, GMMs provide probabilistic membership to multiple clusters, reflecting the continuous nature of plasma transitions.
-2.	Identifying Hidden Structures: By analyzing multi-dimensional feature spaces, GMMs can reveal underlying plasma populations that are not easily distinguishable using standard statistical techniques.
-3.	Adaptive Classification: Unlike fixed-threshold methods, GMMs can dynamically adjust to different solar wind conditions, making them more robust for analyzing time-varying plasma environments.
+1. Soft Classification: Instead of assigning each data point to a single region, GMMs provide probabilistic membership to multiple clusters, reflecting the continuous nature of plasma transitions.
+2. Identifying Hidden Structures: By analyzing multi-dimensional feature spaces, GMMs can reveal underlying plasma populations that are not easily distinguishable using standard statistical techniques.
+3. Adaptive Classification: Unlike fixed-threshold methods, GMMs can dynamically adjust to different solar wind conditions, making them more robust for analyzing time-varying plasma environments.
 
 Plasma turbulence influences particle distributions, complicating classification tasks.
 Traditional statistical methods struggle with the complexity of plasma regions → need for machine learning.
@@ -242,9 +254,9 @@ Traditional statistical methods struggle with the complexity of plasma regions �
 
 In this project, MMS plasma data is processed using feature engineering techniques, extracting key turbulence-related quantities such as:
 
-1.	Energy ratios (e.g., high-energy vs. low-energy particle intensities).
-2.	Magnetic field variations (e.g., normalized total field strength).
-3.	Turbulence characteristics (e.g., spectral features, variance in particle distributions).
+1. Energy ratios (e.g., high-energy vs. low-energy particle intensities).
+2. Magnetic field variations (e.g., normalized total field strength).
+3. Turbulence characteristics (e.g., spectral features, variance in particle distributions).
 
 These features are then used as input for GMM clustering, which automatically identifies different plasma regions without relying on predefined thresholds. By applying this methodology, we can improve our understanding of how turbulence influences plasma classification and uncover new insights into magnetospheric dynamics.
 
