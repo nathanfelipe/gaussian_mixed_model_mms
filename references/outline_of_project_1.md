@@ -59,10 +59,10 @@ The solar wind is primarily composed of charged particles, with the following ap
 
 ### Temporal Variability:
 The solar wind is not uniform; its speed, density, and composition vary over time due to solar activity, leading to different space weather conditions. The main types of solar wind variations include:
-1.	Fast and Slow Solar Wind:
 
-1.1.	Fast Solar Wind (~700–800 km/s) originates from coronal holes, which are regions of open magnetic field lines that allow plasma to escape freely.
-1.2	Slow Solar Wind (~300–400 km/s) is associated with streamer belt regions where plasma is more confined and escapes intermittently.
+1. Fast and Slow Solar Wind:
+   1. Fast Solar Wind (~700–800 km/s) originates from coronal holes, which are regions of open magnetic field lines that allow plasma to escape freely.
+   2. Slow Solar Wind (~300–400 km/s) is associated with streamer belt regions where plasma is more confined and escapes intermittently.
 
 2.	Coronal Mass Ejections (CMEs):
 
