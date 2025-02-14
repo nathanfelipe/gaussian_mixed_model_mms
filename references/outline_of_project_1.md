@@ -64,13 +64,13 @@ The solar wind is not uniform; its speed, density, and composition vary over tim
    1. Fast Solar Wind (~700–800 km/s) originates from coronal holes, which are regions of open magnetic field lines that allow plasma to escape freely.
    2. Slow Solar Wind (~300–400 km/s) is associated with streamer belt regions where plasma is more confined and escapes intermittently.
 
-2.	Coronal Mass Ejections (CMEs):
+2. Coronal Mass Ejections (CMEs):
    1. CMEs are violent eruptions of magnetized plasma from the Sun’s corona.
    2. They can significantly increase the solar wind’s density and speed, triggering geomagnetic storms when they interact with Earth’s magnetosphere.
 
-3.	Interplanetary Shocks and Turbulence:
+3. Interplanetary Shocks and Turbulence:
    1. Interactions between fast and slow solar wind streams create corotating interaction regions (CIRs), which can develop into shock waves.
-   2. Turbulence in the solar wind plays a key role in energy dissipation and particle acceleration.s.
+   2. Turbulence in the solar wind plays a key role in energy dissipation and particle acceleration.
 
 #### Relevance to MMS Machine Learning:
 The solar wind’s variability and interaction with Earth’s magnetosphere create diverse plasma environments that must be classified and analyzed systematically. The Magnetospheric Multiscale (MMS) mission observes solar wind-driven magnetospheric processes, including magnetic reconnection and turbulence, which play a role in energy transfer. By using machine learning methods, such as Gaussian Mixture Models (GMM), we can classify different solar wind conditions and their impact on the magnetosphere, leading to improved understanding of space weather phenomena.
@@ -90,28 +90,28 @@ The interaction between the solar wind and the magnetosphere is governed by seve
 
 ### Key Regions:
 
-1.	Bow Shock – The First Barrier
-   1.	Located at the outermost boundary of the magnetosphere, the bow shock is the region where the supersonic solar wind abruptly slows down and becomes compressed due to the presence of Earth’s magnetic field.
-   1.	This is a collisionless shock, meaning that energy dissipation occurs through wave-particle interactions rather than direct particle collisions.
-   3.	The bow shock generates turbulence, wave activity, and particle acceleration, which influence plasma dynamics in the downstream region, known as the magnetosheath.
+1. Bow Shock – The First Barrier
+   1. Located at the outermost boundary of the magnetosphere, the bow shock is the region where the supersonic solar wind abruptly slows down and becomes compressed due to the presence of Earth’s magnetic field.
+   1. This is a collisionless shock, meaning that energy dissipation occurs through wave-particle interactions rather than direct particle collisions.
+   3. The bow shock generates turbulence, wave activity, and particle acceleration, which influence plasma dynamics in the downstream region, known as the magnetosheath.
 
-2.	Magnetosheath – The Turbulent Buffer Zone
-   1.	The magnetosheath is the turbulent region located between the bow shock and the magnetopause.
-   2.	Plasma here is heated and slowed down compared to the solar wind but remains highly dynamic.
-   3.	It plays a key role in transferring energy and momentum from the solar wind to the inner magnetosphere through turbulence and instabilities.
-   4.	MMS observations show that reconnection and turbulence in the magnetosheath contribute to plasma transport and mixing.
+2. Magnetosheath – The Turbulent Buffer Zone
+   1. The magnetosheath is the turbulent region located between the bow shock and the magnetopause.
+   2. Plasma here is heated and slowed down compared to the solar wind but remains highly dynamic.
+   3. It plays a key role in transferring energy and momentum from the solar wind to the inner magnetosphere through turbulence and instabilities.
+   4. MMS observations show that reconnection and turbulence in the magnetosheath contribute to plasma transport and mixing.
 
-3.	Magnetopause – The Dynamic Boundary
-   1.	The magnetopause is the transition boundary between the magnetosheath and the Earth’s inner magnetosphere.
-   2.	Its location is highly dynamic and varies based on solar wind pressure.
-   3.	Magnetic reconnection often occurs at this boundary, allowing solar wind plasma to enter the magnetosphere.
-   4.	The nature of reconnection depends on the orientation of the interplanetary magnetic field (IMF)—when the IMF is southward, reconnection is stronger, leading to significant plasma entry and energy transfer.
+3. Magnetopause – The Dynamic Boundary
+   1. The magnetopause is the transition boundary between the magnetosheath and the Earth’s inner magnetosphere.
+   2. Its location is highly dynamic and varies based on solar wind pressure.
+   3. Magnetic reconnection often occurs at this boundary, allowing solar wind plasma to enter the magnetosphere.
+   4. The nature of reconnection depends on the orientation of the interplanetary magnetic field (IMF)—when the IMF is southward, reconnection is stronger, leading to significant plasma entry and energy transfer.
 
-4.	Plasma Sheet & Lobes – The Inner Magnetosphere
-   1.	The plasma sheet is a region of hot, dense plasma located in the center of the magnetotail, acting as a reservoir of energy and particles.
-   2.	The lobes are low-density regions on either side of the plasma sheet, where magnetic field lines are stretched into long tail-like structures.
-   3.	Magnetic reconnection in the magnetotail causes energy to be released in the form of substorms, accelerating particles toward Earth and generating auroras.
-   4.	The plasma sheet plays a crucial role in the transport of charged particles, which can eventually be injected into the radiation belts and ionosphere.
+4. Plasma Sheet & Lobes – The Inner Magnetosphere
+   1. The plasma sheet is a region of hot, dense plasma located in the center of the magnetotail, acting as a reservoir of energy and particles.
+   2. The lobes are low-density regions on either side of the plasma sheet, where magnetic field lines are stretched into long tail-like structures.
+   3. Magnetic reconnection in the magnetotail causes energy to be released in the form of substorms, accelerating particles toward Earth and generating auroras.
+   4. The plasma sheet plays a crucial role in the transport of charged particles, which can eventually be injected into the radiation belts and ionosphere.
 
 ### Relevance to MMS Machine Learning:
 Each of these magnetospheric regions exhibits distinct plasma characteristics, including variations in density, temperature, magnetic field strength, and turbulence levels. One of the challenges in analyzing MMS data is automatically identifying these regions based on their plasma signatures. Gaussian Mixture Models (GMM) and other unsupervised machine learning techniques offer a way to classify different plasma environments, leading to improved models of how the solar wind shapes Earth’s space environment.
@@ -125,9 +125,9 @@ Turbulence is a fundamental process in space plasmas, governing the transfer of 
 In classical fluid dynamics, turbulence is typically studied using the Navier-Stokes equations, which describe the motion of fluids. In a turbulent system, large-scale energy injection (e.g., from solar wind driving or magnetic reconnection) creates eddies, which break down into progressively smaller structures through a process known as an energy cascade. This cascade continues until energy is dissipated at the smallest scales due to viscous effects.
 
 However, plasma turbulence differs from traditional hydrodynamic turbulence due to:
-1.	The Presence of Electromagnetic Fields – Plasma turbulence is governed not only by velocity fluctuations but also by magnetic field fluctuations.
-2.	Collisionless Interactions – In space plasmas (such as the solar wind and magnetosheath), particle collisions are rare, and energy dissipation occurs through wave-particle interactions and kinetic effects rather than molecular viscosity.
-3.	Multiple Coupled Scales – Plasma turbulence spans multiple scales, from large magnetohydrodynamic (MHD) scales to kinetic scales, where wave-particle interactions become dominant.
+1. The Presence of Electromagnetic Fields – Plasma turbulence is governed not only by velocity fluctuations but also by magnetic field fluctuations.
+2. Collisionless Interactions – In space plasmas (such as the solar wind and magnetosheath), particle collisions are rare, and energy dissipation occurs through wave-particle interactions and kinetic effects rather than molecular viscosity.
+3. Multiple Coupled Scales – Plasma turbulence spans multiple scales, from large magnetohydrodynamic (MHD) scales to kinetic scales, where wave-particle interactions become dominant.
 
 #### Multi-scale nature: energy cascades from large to small scales.
 
