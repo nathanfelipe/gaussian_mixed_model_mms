@@ -16,22 +16,22 @@ where  $T_e$  is the electron temperature,  $n_e$  is the electron density,  $k_
 
 ### Plasma Frequency (ω_p): 
 The plasma frequency describes the natural oscillation of electrons in response to small perturbations. If a group of electrons is displaced from equilibrium, the restoring force due to Coulomb attraction causes them to oscillate collectively. The plasma frequency is defined as:\
-	    $$ \omega_p = \sqrt{n_e * e^2 / \epsilon_0 * m_e} $$
+	    $$\omega_p = \sqrt{n_e * e^2 / \epsilon_0 * m_e}$$
 
 where  $m_e$  is the electron mass. This frequency determines how quickly a plasma can respond to changes in charge distributions and is fundamental to wave propagation in plasma. In the solar wind, the electron plasma frequency is on the order of tens of kHz.
 
 ### Gyrofrequency (Ω_c) and Larmor Radius (r_L): 
 When charged particles move in a magnetic field, they undergo gyration (cyclotron motion) due to the Lorentz force. The gyrofrequency (or cyclotron frequency) is the angular frequency of this motion:\
-	    $$ \Omega_c = e * B / m_e $$
+	    $$\Omega_c = e * B / m_e$$
 
 where  q  is the particle charge,  B  is the magnetic field strength, and  m  is the particle mass. The Larmor radius (or gyroradius) is the radius of the circular motion:\
-	    $$ r_L = v_\perp / \Omega_c $$
+	    $$r_L = v_\perp / \Omega_c$$
 
 where  v_\perp  is the velocity perpendicular to the magnetic field. These parameters determine how tightly particles spiral around magnetic field lines and play a crucial role in plasma confinement, transport, and wave interactions.
 
 ### Plasma Beta (β): 
 The plasma beta parameter is the ratio of thermal pressure to magnetic pressure, which defines the dominance of kinetic versus magnetic effects:\
-	    $$ \beta = (n * k_B * T) / (B^2 / 2 * \mu_0) $$
+	    $$\beta = (n * k_B * T) / (B^2 / 2 * \mu_0)$$
 
 where  $n$  is the particle density,  $T$  is the plasma temperature,  $B$  is the magnetic field strength, and  $\mu_0$  is the permeability of free space. A low-beta plasma ($\beta \ll 1$) is magnetically dominated, while a high-beta plasma ($\beta \gg 1$) is kinetically dominated. Different regions of Earth’s magnetosphere exhibit varying plasma beta values, influencing reconnection and turbulence dynamics.
 
@@ -208,7 +208,7 @@ In turbulent plasmas, charged particles undergo random, diffusive motion due to 
 The turbulent heating of ions and electrons has profound effects on the overall dynamics of Earth’s magnetosphere:
 1. Increased Plasma Pressure
    1. When turbulence heats plasma, the plasma beta increases:\
-        $$ \beta = P_{\text{thermal}} / P_{\text{magnetic}} $$
+        $$\beta = P_{\text{thermal}} / P_{\text{magnetic}}$$
     
    2. This affects stability, reconnection rates, and transport processes in the magnetosphere.
 2. Regulation of Magnetopause and Magnetotail Dynamics
