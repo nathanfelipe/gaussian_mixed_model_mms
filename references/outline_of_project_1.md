@@ -11,7 +11,7 @@ Plasma behavior is governed by several fundamental parameters that characterize 
 ###	Debye Length:
 The Debye length is the characteristic scale over which electric fields are shielded in a plasma due to the collective response of free electrons. In a plasma, charged particles naturally rearrange to neutralize any local charge imbalances, preventing large-scale electrostatic fields from developing. This shielding effect ensures that plasmas behave as quasi-neutral media over large distances. The Debye length is given by:
 
-	    $$ \lambda_D = \sqrt{\epsilon_0 * k_B * T / n_e * e^2} $$
+	    $$\lambda_D = \sqrt{\epsilon_0 * k_B * T / n_e * e^2}$$
 
 where  T_e  is the electron temperature,  n_e  is the electron density,  k_B  is Boltzmann’s constant,  e  is the elementary charge, and  \epsilon_0  is the permittivity of free space. In the solar wind, the Debye length is typically a few meters, setting the smallest scale at which electrostatic interactions occur.
 
@@ -37,7 +37,7 @@ where  v_\perp  is the velocity perpendicular to the magnetic field. These param
 The plasma beta parameter is the ratio of thermal pressure to magnetic pressure, which defines the dominance of kinetic versus magnetic effects:
 
 	    $$ \beta = (n * k_B * T) / (B^2 / 2 * \mu_0) $$
-        
+
 where  n  is the particle density,  T  is the plasma temperature,  B  is the magnetic field strength, and  \mu_0  is the permeability of free space. A low-beta plasma (β ≪ 1) is magnetically dominated, while a high-beta plasma (β ≫ 1) is kinetically dominated. Different regions of Earth’s magnetosphere exhibit varying plasma beta values, influencing reconnection and turbulence dynamics.
 
 ### Collisional vs. Collisionless Plasmas: 
@@ -149,7 +149,7 @@ The energy cascade in plasma turbulence describes how energy injected at large s
    1. As energy reaches the ion scales (where ion cyclotron motion becomes important), MHD descriptions break down, and turbulence transitions to a kinetic regime.
    2. At these scales, energy dissipation occurs through wave-particle interactions, Landau damping, and reconnection-driven turbulence.
    3. A steeper spectral slope ( P(k) \sim k^{-7/3}  or more) is often observed.
-3.	Energy Dissipation and Heating:
+3. Energy Dissipation and Heating:
    1. Unlike hydrodynamic turbulence, where energy is dissipated via molecular viscosity, in plasmas, energy is dissipated through wave damping, reconnection, and stochastic heating mechanisms.
    2. This turbulent heating is crucial for explaining why the solar wind remains hot even as it expands away from the Sun.
 
@@ -162,9 +162,8 @@ The study of turbulence often involves analyzing how energy is distributed acros
 #### Kolmogorov scaling (~k^(-5/3) in MHD turbulence).
 In the magnetohydrodynamic (MHD) regime, which governs large-scale plasma dynamics where the ion and electron motion remain well coupled, the turbulence follows a power-law energy spectrum similar to Kolmogorov’s theory of hydrodynamic turbulence.
 1. Kolmogorov’s theory predicts that in a fully developed turbulent cascade, energy is injected at large scales, cascades through intermediate scales, and is dissipated at smaller scales.
-2. The power spectral density of turbulent fluctuations follows a characteristic scaling:
-
-     $$ P(k) \sim k^{-5/3} $$
+2. The power spectral density of turbulent fluctuations follows a characteristic scaling:\
+     $$P(k) \sim k^{-5/3}$$
 
 where:
    1. P(k)  represents the power spectral density,
