@@ -68,7 +68,7 @@ MMS data contains multiple plasma parameters (e.g., density, velocity, turbulenc
 While GMM is a powerful clustering method, applying it to MMS plasma data presents additional challenges:
 
 1. Plasma Data is Multi-Dimensional
-   - Unlike the 2D toy model, real MMS data involves multiple plasma features
+   - Real MMS data involves multiple plasma features
    - Selecting the most relevant features is crucial to achieving meaningful classification
 
 2. Complex Covariance Structures in Plasma Populations
