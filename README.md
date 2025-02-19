@@ -77,12 +77,7 @@ gaussian_mixed_model_mms/
    cd gaussian_mixed_model_mms
    ```
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Using Docker:
+2. Using Docker:
    ```bash
    docker build -t gaussian_mixed_model_mms .
    docker run -v $(pwd)/data:/gaussian_mixed_model_mms/data gaussian_mixed_model_mms
